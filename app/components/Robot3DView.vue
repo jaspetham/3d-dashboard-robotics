@@ -48,7 +48,6 @@ const animate = () => {
 }
 
 watch(() => props.manualJoint, (angle) => {
-  console.log('Chart watcher fired:', angle)
   if (robot) robot.rotation.y = (angle || 0) * Math.PI / 180
 })
 

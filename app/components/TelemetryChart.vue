@@ -68,7 +68,6 @@ watch(data, (telemetry) => {
   const newJoint = [...jointSet.data, Number(telemetry.joints[0] ?? 0)]
   if (newJoint.length > 10) newJoint.shift()
   jointSet.data = newJoint
-console.log(tempSet.data)
 
 })
 </script>
